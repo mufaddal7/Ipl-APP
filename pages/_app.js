@@ -5,7 +5,6 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { red } from '@material-ui/core/colors';
-import { Workbox } from "workbox-window";
 
 const theme = createMuiTheme({
   palette: {
@@ -37,17 +36,17 @@ const theme = createMuiTheme({
 
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    if (
-      !("serviceWorker" in navigator) ||
-      process.env.NODE_ENV !== "production"
-    ) {
-      console.warn("Progressive Web App support is disabled");
-      return;
-    }
-    const wb = new Workbox("sw.js", { scope: "/" });
-    wb.register();
-  }, []);
+  // useEffect(() => {
+  //   if (
+  //     !("serviceWorker" in navigator) ||
+  //     process.env.NODE_ENV !== "production"
+  //   ) {
+  //     console.warn("Progressive Web App support is disabled");
+  //     return;
+  //   }
+  //   const wb = new Workbox("sw.js", { scope: "/" });
+  //   wb.register();
+  // }, []);
 
   MyApp.getInitialProps = async (appContext) => {
   // calls page's `getInitialProps` and fills `appProps.pageProps`
