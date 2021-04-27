@@ -11,15 +11,7 @@ import MobileBar from './MobileBar'
 import styles from './AppBar.module.css'
 
 const useStyles = makeStyles((theme) => ({
-    LoginBox: {
-        margin: 'auto',
-        [theme.breakpoints.only('xs')]: {
-            display: 'none',
-        },
-        name: {
-            color: '#fff'
-        }
-    },
+    
     logo: {
         
         height: '24px',
@@ -85,7 +77,7 @@ export default function Layout({ children, home, header, getCategory, getLoggedI
     };
     return (
         <>
-            <Box display={{ xs: "none", sm: "block" }}>
+            <Box>
                 <header className={styles.apheader}>
 
                     <div className={classes.apoheader}>
@@ -104,12 +96,11 @@ export default function Layout({ children, home, header, getCategory, getLoggedI
                             <li className={classes.menuLi}><a className={classes.menuButtons} href="#"><img alt="BodyWise" src={"/whatsapp.png"} /></a></li>
                             <li className={classes.menuLi}><a className={classes.menuButtons} href="#"><img alt="BodyWise" src={"/profile.png"} /></a></li>
                             <li className={classes.menuLi}><a className={classes.menuButtons} href="#"><img alt="BodyWise" src={"/cart.png"} /></a></li>
-
                         </ul>
                     </div>
                 </header>
             </Box>
-            <Box display={{ xs: "block", sm: "none" }}>
+            <Box display={{ sm: "block", md: "none" }}>
         <MobileBar  header={header} home={home} />
       </Box> 
         </>

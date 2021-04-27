@@ -12,6 +12,7 @@ background: '#FFFFFF',
 boxShadow: '0px 4px 16px rgba(0, 0, 0, 0.12)',
 borderRadius: '4px',
 margin: '0px 32px',
+[theme.breakpoints.up('md')]: {
 '&:hover': {
       boxShadow: '-1px 6px 20px 0px rgba(0,0,0,0.8)',
       '& img':{
@@ -19,30 +20,51 @@ margin: '0px 32px',
       marginLeft:'16px',
       }
     },
+},
+    [theme.breakpoints.down('md')]: {
+        marginRight: '4px',
+        width: '92px',
+height: '118px',
+    }
   },
 subHeader:  {
     width: '111px',
     height: '77px',
     background: '#2A658D',
     borderRadius: '0px',
+    [theme.breakpoints.down('md')]: {
+        width: '92px',
+height: '56px',
+    }
   },
   whiteSpace:{
     width: '111px',
     height: '53px',
     background: '#fff',
     borderRadius: '0px',
+    [theme.breakpoints.down('md')]: {
+        width: '92px',
+height: '62px',
+    }
   },
   title:{
     fontSize: '12px',
     color: '#fff',
-    paddingTop:'42px'
+    paddingTop:'42px',
+     [theme.breakpoints.down('md')]: {
+        paddingTop:'22px',
+
+    }
   },
   img:{
       margin:'auto',
       marginTop:'16px',
       marginLeft:'16px',
-
-      position:'absolute'
+      position:'absolute',
+      [theme.breakpoints.down('md')]: {
+        marginTop:'16px',
+        marginLeft:'6px',
+    }
   }
 }))
 export default function CategoryCard(props) {
