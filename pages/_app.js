@@ -12,7 +12,7 @@ const theme = createMuiTheme({
       main: '#296ba0',
     },
     secondary: {
-      main: '#19857b',
+      main: '#FFC043',
     },
     black: {
       main: '#000000',
@@ -33,8 +33,6 @@ const theme = createMuiTheme({
     },
   },
 });
-
-
 function MyApp({ Component, pageProps }) {
   // useEffect(() => {
   //   if (
@@ -48,6 +46,7 @@ function MyApp({ Component, pageProps }) {
   //   wb.register();
   // }, []);
 
+  
   MyApp.getInitialProps = async (appContext) => {
   // calls page's `getInitialProps` and fills `appProps.pageProps`
   const appProps = await App.getInitialProps(appContext);

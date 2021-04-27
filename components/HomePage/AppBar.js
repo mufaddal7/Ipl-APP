@@ -109,9 +109,9 @@ export default function Layout({ children, home, header, getCategory, getLoggedI
                     </div>
                 </header>
             </Box>
-            {/* <Box display={{ xs: "block", sm: "none" }}>
+            <Box display={{ xs: "block", sm: "none" }}>
         <MobileBar  header={header} home={home} />
-      </Box> */}
+      </Box> 
         </>
     )
 }
