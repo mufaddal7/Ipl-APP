@@ -27,11 +27,15 @@ flexDirection:'column'
     position: 'absolute',
     width: '725px',
     height: '399px',
+    maxWidth:'100%',
     // top: '50%',
     // right: '50%',
     // transform: 'translate(50%,-50%)',
     textAlign: 'center',
     background: '#FFFFFF',
+    [theme.breakpoints.down('md')]: {
+      width: '100%',
+    },
   },
   heading: {
     marginTop: '32px',

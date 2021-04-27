@@ -22,7 +22,8 @@ margin: '0px 32px',
     },
 },
     [theme.breakpoints.down('md')]: {
-        marginRight: '4px',
+      margin: '0px 8px',
+
         width: '92px',
 height: '118px',
     }

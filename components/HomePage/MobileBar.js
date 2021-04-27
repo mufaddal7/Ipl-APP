@@ -17,7 +17,10 @@ import DrawerSlideBar from './DrawerSideBar'
 const useStyles = makeStyles((theme) => ({
 
   header: {
-    backgroundColor: '#000000'
+    backgroundColor: '#000000',
+    maxWidth:'100%',
+    width:'100%',
+    overflowY: 'hidden'
   },
   menuButton: {
     marginRight: theme.spacing(1),
@@ -26,17 +29,11 @@ const useStyles = makeStyles((theme) => ({
     height: '1.5rem',
     width: 'auto'
   },
-  sectionDesktop: {
-    display: 'flex',
-  },
   sectionMobile: {
-    display: 'flex',
+    display: 'block',
     float: 'right',
     position: 'absolute',
     right: '15px',
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
-    },
   },
   offset: theme.mixins.toolbar,
 
@@ -123,7 +120,7 @@ export default function MobileBar() {
   );
 
   return (
-    <div className={classes.grow}>
+    <div>
       <AppBar className={classes.header} position="fixed">
         <Toolbar>
           <IconButton onClick={toggleDrawer('left', true)}
