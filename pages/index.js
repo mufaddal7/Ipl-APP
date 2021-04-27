@@ -2,6 +2,8 @@ import Head from 'next/head'
 import AppBar1 from './../components/HomePage/AppBar'
 import TopPost from './../components/HomePage/TopPost'
 import CTA from './../components/HomePage/CTA'
+import HowItWorks from './../components/HomePage/HowItWorks'
+
 import React from 'react'
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
 <AppBar1/>
 <TopPost/>
 <CTA/>
+<HowItWorks/>
     </>
   )
 }
