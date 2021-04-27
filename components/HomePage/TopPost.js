@@ -16,6 +16,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    [theme.breakpoints.down('md')]: {
+      backgroundImage: "none",
+      backgroundColor:'#fff',
+      height: '427px',
+flexDirection:'column'
+    },
   },
   card: {
     position: 'absolute',
@@ -43,6 +49,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     margin: 'auto',
     maxWidth:'95vw',
+    [theme.breakpoints.down('md')]: {
+      fontSize: "14px",
+      lineHeight: '20px',
+      padding:'0px 16px'
+    }
   },
   subtitle2: {
     //styleName: Heading / Small;
