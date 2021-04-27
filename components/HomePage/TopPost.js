@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: '0px',
     width: '574px',
     textAlign: 'center',
-    margin: 'auto'
+    margin: 'auto',
+    maxWidth:'95vw',
   },
   subtitle2: {
     //styleName: Heading / Small;
@@ -51,7 +52,8 @@ const useStyles = makeStyles((theme) => ({
     width: '574px',
     textAlign: 'center',
     marginTop: '32px',
-    margin: 'auto'
+    margin: 'auto',
+    maxWidth:'95vw',
   },
   categories:{
     marginTop:'12px',
