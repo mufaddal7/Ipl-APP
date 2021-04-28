@@ -50,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '18px',
         lineHeight: '24px',
         marginTop: '36px',
+        cursor: 'pointer',
         [theme.breakpoints.down('md')]: {
             fontSize: '16px',
             lineHeight: '20px',
@@ -67,7 +68,7 @@ export default function TopPost() {
                 <h1 className={styles.heading}>Not sure where to start? We can help</h1>
                 <p className={styles.subtitle}>Let's understand you a bit by asking a few questions before you talk to our experts</p>
             </div>
-            <button className={styles.button}>Get Started</button>
+            <a href='#'><button className={styles.button}>Get Started</button></a>
         </div>
     )
 }
