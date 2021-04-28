@@ -87,6 +87,12 @@ const useStyles = makeStyles((theme) => ({
     inactive: {
         background: '#F6F6F6',
         color: '#000000',
+    },
+    activeCarousel:{
+        display:'block'
+    },
+    inactiveCarousel:{
+        display:'none'
     }
 }))
 
@@ -120,12 +126,16 @@ export default function Products() {
                 <button onClick={()=>skinClick()} className={`${styles.button}  ${skin ? styles.active :''} MyStringClass`}>Skin</button>
                 <button onClick={()=>weightClick()} className={`${styles.button}  ${weight ? styles.active :''} MyStringClass`}>Weight</button>
             </div>
-            {/* <div>
-<ProductCard rating='4.5' name='Hair fall Control Shampoo Copy'/>
-<ProductCard rating='4.5' name='Hair fall Control Shampoo Copy'/>
-<ProductCard rating='4.5' name='Hair fall Control Shampoo Copy'/>
-</div> */}
-<ProductsCarousel/>
+            <div className={`${hair ? styles.activeCarousel : styles.inactiveCarousel} `}>
+<ProductsCarousel name='Hair fall Control Shampoo'/>
         </div>
+        <div className={`${skin ? styles.activeCarousel : styles.inactiveCarousel} `}>
+<ProductsCarousel name='Skin Care Products'/>
+        </div>
+        <div className={`${weight ? styles.activeCarousel : styles.inactiveCarousel} `}>
+<ProductsCarousel name='Weight Loss defeat obesity'/>
+        </div>
+        </div>
+
     )
 }
