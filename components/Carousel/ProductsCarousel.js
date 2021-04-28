@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
 
 }))
 
-export default function ProductCarousel({ categoryProduct }) {
+export default function ProductCarousel(props) {
     const sliderRef = useRef();
 
     const styles = useStyles()
@@ -117,12 +117,13 @@ export default function ProductCarousel({ categoryProduct }) {
     return (
         <div className={styles.container}>
             <Slider ref={sliderRef} {...settings}>
-                <ProductCard rating='4.5' name='Hair fall Control Shampoo ' />
-                <ProductCard rating='4.5' name='Hair fall Control Shampoo ' />
-                <ProductCard rating='4.5' name='Hair fall Control Shampoo ' />
-                <ProductCard rating='4.5' name='Hair fall Control Shampoo ' />
-                <ProductCard rating='4.5' name='Hair fall Control Shampoo ' />
-                <ProductCard rating='4.5' name='Hair fall Control Shampoo ' />
+                <ProductCard rating='4.5' name={`${props.name ? props.name :'Hair fall Control Shampoo ' } `} />
+                <ProductCard rating='4.5' name={`${props.name ? props.name :'Hair fall Control Shampoo ' } `} />
+                <ProductCard rating='4.5' name={`${props.name ? props.name :'Hair fall Control Shampoo ' } `} />
+                <ProductCard rating='4.5' name={`${props.name ? props.name :'Hair fall Control Shampoo ' } `} />
+                <ProductCard rating='4.5' name={`${props.name ? props.name :'Hair fall Control Shampoo ' } `} />
+                <ProductCard rating='4.5' name={`${props.name ? props.name :'Hair fall Control Shampoo ' } `} />
+
             </Slider>
 
             <div className={styles.bottom}>
