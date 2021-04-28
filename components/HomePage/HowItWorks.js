@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     },
     image: {
         width: '460px',
-        maxWidth: '100%',
+        maxWidth: '470px',
         float: 'right',
         //marginLeft:'auto',
         [theme.breakpoints.down('md')]: {
@@ -98,8 +98,8 @@ export default function HowItWorks() {
                 </div>
                 <div className={styles.contentDiv}>
                     <InfoCard title='1. Help us know you' subtitle='Know what youre looking for? Browse ourcarefully crafted solutions. Not sure what will work for you? Schedule a free online consultation with our renowned experts' />
-                    <InfoCard title='1. Help us know you' subtitle='Know what youre looking for? Browse ourcarefully crafted solutions. Not sure what will work for you? Schedule a free online consultation with our renowned experts' />
-                    <InfoCard title='1. Help us know you' subtitle='Know what youre looking for? Browse ourcarefully crafted solutions. Not sure what will work for you? Schedule a free online consultation with our renowned experts' />
+                    <InfoCard title='2. Help us know you' subtitle='Know what youre looking for? Browse ourcarefully crafted solutions. Not sure what will work for you? Schedule a free online consultation with our renowned experts' />
+                    <InfoCard title='3. Help us know you' subtitle='Know what youre looking for? Browse ourcarefully crafted solutions. Not sure what will work for you? Schedule a free online consultation with our renowned experts' />
 
 
                 </div>
