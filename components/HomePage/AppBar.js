@@ -65,7 +65,14 @@ const useStyles = makeStyles((theme) => ({
         display: 'inline-flex',
         margin:'auto',
 
-    }
+    },
+    
+    offset: {
+        [theme.breakpoints.up('md')]: 
+        theme.mixins.toolbar,
+    },
+    
+
 }))
 
 export default function Layout({ children, home, header, getCategory, getLoggedIn }) {
@@ -103,6 +110,10 @@ export default function Layout({ children, home, header, getCategory, getLoggedI
             <Box display={{ sm: "block", md: "none" }}>
         <MobileBar  header={header} home={home} />
       </Box> 
+      <Box display={{md: "block" ,lg:"none"}}>
+      <div className={classes.offset} />
+      </Box>
+
         </>
     )
 }
